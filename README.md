@@ -1,4 +1,4 @@
-# Pole Zero Response Plotter Python
+# Pole Zero Response Plotter using Python and PyQt5
 Only prerequisite is to have an updated version of Python3 (3.8.10 is recommended).
 
 ```> python 'response plotter.py'``` will run the program and install the required packages automatically.
