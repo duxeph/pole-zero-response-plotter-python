@@ -1,4 +1,8 @@
-# pole-zero-response-plotter-python
+# Pole Zero Response Plotter Python
+Only prerequisite is to have an updated version of Python3 (3.8.10 is recommended).
+
+```> python 'response plotter.py'``` will run the program and install the required packages automatically.
+#
 <p align="center">s-plane Magnitude Response</p>
 <p align="center"><img src="https://user-images.githubusercontent.com/77770587/221768458-91554953-3ade-4ab0-a260-f1a0cf2758eb.png" width="900"></p>
 <p align="center">s-plane Phase Response</p>
