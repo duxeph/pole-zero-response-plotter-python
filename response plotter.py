@@ -112,7 +112,7 @@ class plotZ:
 class MyApp(QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
-        loadUi(os.getcwd()+"/interface/premium upgraded.ui", self) # self.setWindowTitle("Deneme") # change title
+        loadUi(os.getcwd()+"/interface/main.ui", self) # self.setWindowTitle("Deneme") # change title
 
         self.clearButton.clicked.connect(self.clear)
         self.magButton.clicked.connect(self.plotTypeChanged)

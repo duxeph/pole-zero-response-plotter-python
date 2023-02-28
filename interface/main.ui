@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1216</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1940</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Pole Zero Response Plotter</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1" colspan="16">
+     <widget class="Line" name="lineX">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="13">
+     <widget class="QRadioButton" name="phaseButton">
+      <property name="text">
+       <string>Phase Plot</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="4">
+     <widget class="QToolButton" name="decSenButton">
+      <property name="text">
+       <string>DEC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="14">
+     <widget class="QLabel" name="planeLabel">
+      <property name="text">
+       <string>Current plane: s-plane</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="9">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="17">
+     <widget class="Line" name="lineY">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QToolButton" name="incSenButton">
+      <property name="text">
+       <string>INC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QToolButton" name="decScButton">
+      <property name="text">
+       <string>DEC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLabel" name="scaleLabel">
+      <property name="text">
+       <string>Scale rate: 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="15">
+     <widget class="QPushButton" name="clearButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Clear All</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="16">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLabel" name="ratioInfoLabel">
+      <property name="text">
+       <string>Sensitivity: 0.005</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QToolButton" name="incScButton">
+      <property name="text">
+       <string>INC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="12">
+     <widget class="QRadioButton" name="magButton">
+      <property name="text">
+       <string>Magnitude Plot</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="14">
+     <widget class="QCheckBox" name="delBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Delete by click</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="15">
+     <widget class="QPushButton" name="planeButton">
+      <property name="text">
+       <string>Change Plane</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="18" rowspan="4">
+     <widget class="MplWidget" name="MplWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1216</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
